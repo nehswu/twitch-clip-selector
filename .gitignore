@@ -1,0 +1,4 @@
+.env
+seen_clips.db
+.venv/
+__pycache__/
