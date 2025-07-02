@@ -47,19 +47,19 @@ A Python tool to fetch a random Twitch clip for a given streamer, with support f
 Run the tool from the command line:
 
 ```sh
-python -m twitchclipselector --streamer <streamer_login> --limit 20
+python -m twitchclipselector <streamer_login> [--limit N] [--ignore-db]
 ```
 
 ### Arguments
 
-- `--streamer` (required): Twitch login name of the streamer.
-- `--limit` (optional): Maximum number of recent clips to consider (default: 20).
-- `--ignore-db` (optional): Ignore the seen clips database and allow repeats.
+- `<streamer_login>` (required): Twitch login name of the streamer.
+- `-l`, `--limit` (optional): Maximum number of recent clips to consider (default: 100).
+- `-i`, `--ignore-db` (optional): Ignore the seen clips database and allow repeats.
 
 ### Example
 
 ```sh
-python -m twitchclipselector --streamer pokimane --limit 10
+python -m twitchclipselector pokimane --limit 10
 ```
 
 ## Development
@@ -73,4 +73,4 @@ MIT License
 
 ---
 
-*Made with ❤️ for Twitch communities!*
+*Made with ❤️ for streamers!*
